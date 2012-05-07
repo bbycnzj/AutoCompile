@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6EBF58515522354006D50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBF58415522354006D50C9 /* Cocoa.framework */; };
+		F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF58D15522354006D50C9 /* InfoPlist.strings */; };
+		F6EBF59115522354006D50C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBF59015522354006D50C9 /* main.m */; };
+		F6EBF59515522354006D50C9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF59315522354006D50C9 /* Credits.rtf */; };
+		F6EBF59815522354006D50C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBF59715522354006D50C9 /* AppDelegate.m */; };
+		F6EBF59B15522354006D50C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF59915522354006D50C9 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6EBF58015522354006D50C9 /* 快盘自动编译工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "快盘自动编译工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EBF58415522354006D50C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6EBF58715522354006D50C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6EBF58815522354006D50C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6EBF58915522354006D50C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6EBF58C15522354006D50C9 /* KuaiPanTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KuaiPanTool-Info.plist"; sourceTree = "<group>"; };
+		F6EBF58E15522354006D50C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6EBF59015522354006D50C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6EBF59215522354006D50C9 /* KuaiPanTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KuaiPanTool-Prefix.pch"; sourceTree = "<group>"; };
+		F6EBF59415522354006D50C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6EBF59615522354006D50C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6EBF59715522354006D50C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6EBF59A15522354006D50C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6EBF5AA15522A84006D50C9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6EBF57D15522354006D50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EBF58515522354006D50C9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6EBF57515522353006D50C9 = {
+			isa = PBXGroup;
+			children = (
+				F6EBF58A15522354006D50C9 /* KuaiPanTool */,
+				F6EBF58315522354006D50C9 /* Frameworks */,
+				F6EBF58115522354006D50C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6EBF58115522354006D50C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF58015522354006D50C9 /* 快盘自动编译工具.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6EBF58315522354006D50C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF58415522354006D50C9 /* Cocoa.framework */,
+				F6EBF58615522354006D50C9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6EBF58615522354006D50C9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF58715522354006D50C9 /* AppKit.framework */,
+				F6EBF58815522354006D50C9 /* CoreData.framework */,
+				F6EBF58915522354006D50C9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6EBF58A15522354006D50C9 /* KuaiPanTool */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF59615522354006D50C9 /* AppDelegate.h */,
+				F6EBF59715522354006D50C9 /* AppDelegate.m */,
+				F6EBF59915522354006D50C9 /* MainMenu.xib */,
+				F6EBF5AA15522A84006D50C9 /* Defines.h */,
+				F6EBF58B15522354006D50C9 /* Supporting Files */,
+			);
+			path = KuaiPanTool;
+			sourceTree = "<group>";
+		};
+		F6EBF58B15522354006D50C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBF58C15522354006D50C9 /* KuaiPanTool-Info.plist */,
+				F6EBF58D15522354006D50C9 /* InfoPlist.strings */,
+				F6EBF59015522354006D50C9 /* main.m */,
+				F6EBF59215522354006D50C9 /* KuaiPanTool-Prefix.pch */,
+				F6EBF59315522354006D50C9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6EBF57F15522354006D50C9 /* 快盘自动编译工具 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EBF59E15522354006D50C9 /* Build configuration list for PBXNativeTarget "快盘自动编译工具" */;
+			buildPhases = (
+				F6EBF57C15522354006D50C9 /* Sources */,
+				F6EBF57D15522354006D50C9 /* Frameworks */,
+				F6EBF57E15522354006D50C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "快盘自动编译工具";
+			productName = KuaiPanTool;
+			productReference = F6EBF58015522354006D50C9 /* 快盘自动编译工具.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6EBF57715522353006D50C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F6EBF57A15522353006D50C9 /* Build configuration list for PBXProject "KuaiPanTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6EBF57515522353006D50C9;
+			productRefGroup = F6EBF58115522354006D50C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6EBF57F15522354006D50C9 /* 快盘自动编译工具 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6EBF57E15522354006D50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */,
+				F6EBF59515522354006D50C9 /* Credits.rtf in Resources */,
+				F6EBF59B15522354006D50C9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6EBF57C15522354006D50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EBF59115522354006D50C9 /* main.m in Sources */,
+				F6EBF59815522354006D50C9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6EBF58D15522354006D50C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EBF58E15522354006D50C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6EBF59315522354006D50C9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EBF59415522354006D50C9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6EBF59915522354006D50C9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EBF59A15522354006D50C9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6EBF59C15522354006D50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6EBF59D15522354006D50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6EBF59F15522354006D50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KuaiPanTool/KuaiPanTool-Prefix.pch";
+				INFOPLIST_FILE = "KuaiPanTool/KuaiPanTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6EBF5A015522354006D50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KuaiPanTool/KuaiPanTool-Prefix.pch";
+				INFOPLIST_FILE = "KuaiPanTool/KuaiPanTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6EBF57A15522353006D50C9 /* Build configuration list for PBXProject "KuaiPanTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EBF59C15522354006D50C9 /* Debug */,
+				F6EBF59D15522354006D50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6EBF59E15522354006D50C9 /* Build configuration list for PBXNativeTarget "快盘自动编译工具" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EBF59F15522354006D50C9 /* Debug */,
+				F6EBF5A015522354006D50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6EBF57715522353006D50C9 /* Project object */;
+}
