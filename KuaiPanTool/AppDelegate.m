@@ -273,6 +273,22 @@
     log.string = @"";
 }
 
+- (IBAction)doSelectPath:(id)sender
+{
+    NSOpenPanel *pan = [[NSOpenPanel alloc] init];
+    
+    [pan setTitle:@"选择代码路径"];
+    [pan setCanChooseDirectories:YES];
+    [pan setDirectoryURL:[NSURL fileURLWithPath:_txtCodePath.stringValue]];
+    [pan beginSheetModalForWindow:_window completionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            _txtCodePath.stringValue = [[pan URL] path];
+        }
+    }];
+    
+    [pan release];
+}
+
 - (void)internalCompile:(CompileType)type
 {
     NSString *arg1 = _txtCodePath.stringValue;

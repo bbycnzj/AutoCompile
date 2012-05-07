@@ -30,4 +30,6 @@
 - (IBAction)doCompileDistribution:(id)sender;
 - (IBAction)doClearLog:(id)sender;
 
+- (IBAction)doSelectPath:(id)sender;
+
 @end
