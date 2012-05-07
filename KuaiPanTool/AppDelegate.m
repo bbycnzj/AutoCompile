@@ -79,7 +79,8 @@
 #pragma mark - Handle event methods
 
 - (NSString *)getConfigPath
-{
+{  
+    // 配置文件路径
     NSString *configPath = [NSString stringWithFormat:@"%@/%@",[[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent], CONFIG_FILENAME];
     return configPath;
 }
