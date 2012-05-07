@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6C8E7991557AB5700B9245D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E7971557AB5700B9245D /* MainMenu.xib */; };
 		F6EBF58515522354006D50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBF58415522354006D50C9 /* Cocoa.framework */; };
 		F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF58D15522354006D50C9 /* InfoPlist.strings */; };
 		F6EBF59115522354006D50C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBF59015522354006D50C9 /* main.m */; };
 		F6EBF59515522354006D50C9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF59315522354006D50C9 /* Credits.rtf */; };
 		F6EBF59815522354006D50C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBF59715522354006D50C9 /* AppDelegate.m */; };
-		F6EBF59B15522354006D50C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF59915522354006D50C9 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6C8E7981557AB5700B9245D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = KuaiPanTool/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F6EBF58015522354006D50C9 /* 快盘自动编译工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "快盘自动编译工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EBF58415522354006D50C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F6EBF58715522354006D50C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -28,7 +29,6 @@
 		F6EBF59415522354006D50C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F6EBF59615522354006D50C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6EBF59715522354006D50C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F6EBF59A15522354006D50C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F6EBF5AA15522A84006D50C9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +85,8 @@
 			children = (
 				F6EBF59615522354006D50C9 /* AppDelegate.h */,
 				F6EBF59715522354006D50C9 /* AppDelegate.m */,
-				F6EBF59915522354006D50C9 /* MainMenu.xib */,
 				F6EBF5AA15522A84006D50C9 /* Defines.h */,
+				F6C8E7971557AB5700B9245D /* MainMenu.xib */,
 				F6EBF58B15522354006D50C9 /* Supporting Files */,
 			);
 			path = KuaiPanTool;
@@ -156,7 +156,7 @@
 			files = (
 				F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */,
 				F6EBF59515522354006D50C9 /* Credits.rtf in Resources */,
-				F6EBF59B15522354006D50C9 /* MainMenu.xib in Resources */,
+				F6C8E7991557AB5700B9245D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +175,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F6C8E7971557AB5700B9245D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C8E7981557AB5700B9245D /* en */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F6EBF58D15522354006D50C9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -189,14 +198,6 @@
 				F6EBF59415522354006D50C9 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		F6EBF59915522354006D50C9 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6EBF59A15522354006D50C9 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
