@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F6C8E7991557AB5700B9245D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E7971557AB5700B9245D /* MainMenu.xib */; };
+		F6C8E7B01557D56200B9245D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E7AF1557D56200B9245D /* Icon.png */; };
+		F6C8E7B31557EF9100B9245D /* StatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C8E7B21557EF9100B9245D /* StatusItem.png */; };
 		F6EBF58515522354006D50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBF58415522354006D50C9 /* Cocoa.framework */; };
 		F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6EBF58D15522354006D50C9 /* InfoPlist.strings */; };
 		F6EBF59115522354006D50C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBF59015522354006D50C9 /* main.m */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		F6C8E7981557AB5700B9245D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = KuaiPanTool/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6C8E7AF1557D56200B9245D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F6C8E7B21557EF9100B9245D /* StatusItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusItem.png; sourceTree = "<group>"; };
 		F6EBF58015522354006D50C9 /* 快盘自动编译工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "快盘自动编译工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EBF58415522354006D50C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F6EBF58715522354006D50C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6C8E7AE1557D56200B9245D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6C8E7B21557EF9100B9245D /* StatusItem.png */,
+				F6C8E7AF1557D56200B9245D /* Icon.png */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
 		F6EBF57515522353006D50C9 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 				F6EBF59715522354006D50C9 /* AppDelegate.m */,
 				F6EBF5AA15522A84006D50C9 /* Defines.h */,
 				F6C8E7971557AB5700B9245D /* MainMenu.xib */,
+				F6C8E7AE1557D56200B9245D /* Resources */,
 				F6EBF58B15522354006D50C9 /* Supporting Files */,
 			);
 			path = KuaiPanTool;
@@ -157,6 +171,8 @@
 				F6EBF58F15522354006D50C9 /* InfoPlist.strings in Resources */,
 				F6EBF59515522354006D50C9 /* Credits.rtf in Resources */,
 				F6C8E7991557AB5700B9245D /* MainMenu.xib in Resources */,
+				F6C8E7B01557D56200B9245D /* Icon.png in Resources */,
+				F6C8E7B31557EF9100B9245D /* StatusItem.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

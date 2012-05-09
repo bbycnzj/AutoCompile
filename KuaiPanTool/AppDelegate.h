@@ -10,7 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSTextFieldDelegate> {
     
-    IBOutlet NSTextField     *_txtCodePath;
+    IBOutlet NSComboBox      *_comboxCodePath;
     IBOutlet NSTextField     *_txtInfoPlist;
     IBOutlet NSTextField     *_txtInitVersion;
     
@@ -31,5 +31,6 @@
 - (IBAction)doClearLog:(id)sender;
 
 - (IBAction)doSelectPath:(id)sender;
+- (IBAction)doOpenPath:(id)sender;
 
 @end

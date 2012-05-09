@@ -23,14 +23,27 @@
     
     if ([fm fileExistsAtPath:[self getConfigPath]]) {
         dictCfg = [NSDictionary dictionaryWithContentsOfFile:[self getConfigPath]];
-        _txtCodePath.stringValue = [dictCfg objectForKey:KCODE_PATH];
+        
         _txtInitVersion.stringValue = [dictCfg objectForKey:KINIT_VERSION];
         _txtInfoPlist.stringValue = [dictCfg objectForKey:KINFO_NAME];
         _txtOutputPath.stringValue = [dictCfg objectForKey:KOUTPUT_PATH];
         _txtOutputFile.stringValue = [dictCfg objectForKey:KOUTPUT_FILENAME];
+        
+        NSString *pathOld=[dictCfg objectForKey:KCODE_PATH];
+        NSArray *codePaths = [dictCfg objectForKey:KCODE_PATHS];
+        if (codePaths==nil && pathOld != nil) {
+            codePaths = [NSArray arrayWithObjects:pathOld, nil];
+        }
+        for (NSString *path in codePaths) {
+            [_comboxCodePath addItemWithObjectValue:path];
+        }
+        if (codePaths.count >0) {
+            _comboxCodePath.stringValue = [codePaths objectAtIndex:0];
+        }
     }
     else {
-        _txtCodePath.stringValue = INIT_PATH;
+        _comboxCodePath.stringValue = INIT_PATH;
+        [_comboxCodePath addItemWithObjectValue:INIT_PATH];
         _txtInfoPlist.stringValue = @"LiveSpace-Info.plist";
         _txtOutputPath.stringValue = NSHomeDirectory();
         _txtOutputFile.stringValue = @"KuaipanHD";
@@ -44,6 +57,7 @@
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
+    
     return NO;
 }
 
@@ -99,7 +113,7 @@
 
 - (NSString *)getInfoPath
 {
-    NSString *infoPath = [_txtCodePath.stringValue stringByAppendingPathComponent:_txtInfoPlist.stringValue];
+    NSString *infoPath = [_comboxCodePath.stringValue stringByAppendingPathComponent:_txtInfoPlist.stringValue];
     
     return infoPath;
 }
@@ -200,9 +214,13 @@
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
-    if (_txtInitVersion.stringValue != nil && _txtCodePath.stringValue != nil && _txtInfoPlist.stringValue != nil) {
+    NSArray *codePaths = [_comboxCodePath objectValues];
+    if (codePaths.count != 0) {
+        [dict setObject:codePaths forKey:KCODE_PATHS];
+    }
+    
+    if (_txtInitVersion.stringValue != nil && _txtInfoPlist.stringValue != nil) {
         
-        [dict setObject:_txtCodePath.stringValue forKey:KCODE_PATH];
         [dict setObject:_txtInitVersion.stringValue forKey:KINIT_VERSION];
         [dict setObject:_txtInfoPlist.stringValue forKey:KINFO_NAME];        
     }
@@ -273,25 +291,47 @@
     log.string = @"";
 }
 
+- (void)addPathItem:(NSString *)path
+{
+    // 检查是否已存在
+    NSArray *paths = [_comboxCodePath objectValues];
+    
+    for (NSString *file in paths) {
+        if (![file isEqualToString:path]) {
+            
+            [_comboxCodePath addItemWithObjectValue:path];
+            [self doSaveConfig:nil];
+            break;
+        }
+    }
+}
+
 - (IBAction)doSelectPath:(id)sender
 {
     NSOpenPanel *pan = [[NSOpenPanel alloc] init];
     
     [pan setTitle:@"选择代码路径"];
     [pan setCanChooseDirectories:YES];
-    [pan setDirectoryURL:[NSURL fileURLWithPath:_txtCodePath.stringValue]];
+    [pan setDirectoryURL:[NSURL fileURLWithPath:_comboxCodePath.stringValue]];
     [pan beginSheetModalForWindow:_window completionHandler:^(NSInteger result){
         if (result == NSFileHandlingPanelOKButton) {
-            _txtCodePath.stringValue = [[pan URL] path];
+            _comboxCodePath.stringValue = [[pan URL] path];
+            [self addPathItem:_comboxCodePath.stringValue];
         }
     }];
     
     [pan release];
 }
 
+- (IBAction)doOpenPath:(id)sender
+{
+    NSString *cmd = [NSString stringWithFormat:@"open %@", _txtOutputPath.stringValue];
+    system([cmd UTF8String]);
+}
+
 - (void)internalCompile:(CompileType)type
 {
-    NSString *arg1 = _txtCodePath.stringValue;
+    NSString *arg1 = _comboxCodePath.stringValue;
     NSString *arg2 = @"Distribution";
     NSString *arg3 = _txtInitVersion.stringValue;
     NSString *arg4 = @"Appstore";

@@ -20,6 +20,7 @@ typedef enum {
 #define SHELL_FILENAME      @"Kuaipan"
 
 #define KCODE_PATH          @"kCodePath"
+#define KCODE_PATHS          @"kCodePaths"
 #define KINFO_NAME          @"kInfoName"
 #define KINIT_VERSION       @"kInitVersion"
 #define KTEST_VERSION       @"kTestVersion"
